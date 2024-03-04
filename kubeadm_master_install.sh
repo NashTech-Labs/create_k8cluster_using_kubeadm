@@ -90,4 +90,4 @@ echo "Step 14: Now apply the daemonset yaml!"
 kubectl apply -f weave-daemonset-k8s.yaml
 
 
-#kubeadm join 172.31.6.21:6443 --token 93wsj9.bhkcuyvbgnkc3vyp --discovery-token-ca-cert-hash sha256:431345fd720f6540d1fa0f6099f0f7fbf4f75a683e3f90819ae915c20a60e51e
+#kubeadm join -pubip:6443 --token $token --discovery-token-ca-cert-hash 
